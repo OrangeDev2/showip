@@ -1,10 +1,93 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:200i,400&display=swap");
+
 body {
-    margin: 1rem 10rem 0 10rem;
+    font-family: "Poppins", sans-serif;
+    margin: 1em 5em 3em 5em;
     text-align: center;
     color: white;
     background-color: #B20000;
+    transition: background-color 1s linear;
+}
+
+#footer {
+    margin-bottom: 5em;
 }
 
 header {
+    margin-bottom: 5em;
     text-align: left;
+}
+
+header nav p {
+    font-size: 1em;
+    font-weight: bold;
+}
+
+.map {
+    height: 20em;
+    width: 25em;
+}
+
+#display {
+    text-align: left;
+    margin-bottom: 2rem;
+}
+
+#display p {
+    font-size: 1.5em;
+}
+
+#info ul li {
+    list-style-type: none;
+    text-align: left;
+    margin-bottom: 1em;
+}
+
+#box-container {
+    display: flex;
+}
+
+
+#public-ip, #ip-address {
+    display: inline;
+}
+
+#ip-input {
+    width: 10em;
+    height: 1em;
+    border-style: none;
+    border-radius: 5px;
+    padding: 10px;
+    margin-left: .5em;
+}
+
+#ip-input[value] {
+    font-size: .5em;
+}
+
+#ip-address {
+    text-decoration: underline;
+}
+
+@media (max-width: 750px){
+    body {
+        margin: 0 0 0 .5em;
+    }
+
+    header nav p {
+        font-size: 1rem;
+        margin-left: 0;
+    }
+
+    #display p {
+        display: inline;
+        font-size: 1em;
+    }
+    .map {
+        height: 20em;
+        width: 90%;
+    }
+    #box-container {
+        display: block;
+      }
 }
